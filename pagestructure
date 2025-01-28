@@ -1,0 +1,45 @@
+/my-travel-site
+├── public/                     # Статические файлы (изображения, шрифты и т.д.)
+│   ├── images/                 # Изображения сайта
+│   │   ├── tours/              # Фотографии туров
+│   │   └── products/           # Товары из магазина
+│   └── favicon.ico             # Иконка сайта
+├── src/                        # Весь исходный код проекта
+│   ├── components/             # Компоненты
+│   │   ├── common/             # Общие компоненты (Header, Footer, Layout и т.д.)
+│   │   ├── home/               # Компоненты для Home Page
+│   │   ├── booking/            # Компоненты для Booking Page
+│   │   └── shop/               # Компоненты для Shop Page
+│   ├── pages/                  # Страницы Next.js
+│   │   ├── index.tsx           # Главная страница (Home Page)
+│   │   ├── booking.tsx         # Страница Booking
+│   │   ├── shop.tsx            # Страница Shop
+│   │   └── api/                # Next.js API routes (регистрация, логин и т.д.)
+│   │       ├── auth.ts         # Авторизация
+│   │       └── reviews.ts      # Работа с отзывами
+│   ├── features/               # Redux-слайсы и хранилище
+│   │   ├── authSlice.ts        # Авторизация пользователей
+│   │   ├── toursSlice.ts       # Данные туров
+│   │   ├── reviewsSlice.ts     # Отзывы
+│   │   └── cartSlice.ts        # Корзина и аренда вещей
+│   ├── hooks/                  # Кастомные хуки
+│   │   ├── useAuth.ts          # Проверка авторизации
+│   │   └── useFetch.ts         # Запросы данных
+│   ├── styles/                 # Стили проекта
+│   │   ├── globals.css         # Общие стили
+│   │   ├── home.module.css     # Стили Home Page
+│   │   ├── booking.module.css  # Стили Booking Page
+│   │   └── shop.module.css     # Стили Shop Page
+│   ├── utils/                  # Вспомогательные функции
+│   │   ├── api.ts              # Запросы к API
+│   │   ├── constants.ts        # Константы проекта
+│   │   └── formatDate.ts       # Форматирование дат
+│   ├── types/                  # Типы и интерфейсы для TypeScript
+│   │   ├── tour.ts             # Типы для туров
+│   │   ├── user.ts             # Типы для пользователя
+│   │   └── product.ts          # Типы для товаров в магазине
+│   └── store.ts                # Настройка Redux Store
+├── .eslintrc.js                # Настройки ESLint
+├── tsconfig.json               # Настройки TypeScript
+├── package.json                # Зависимости и скрипты проекта
+└── README.md                   # Описание проекта
