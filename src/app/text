@@ -1,0 +1,31 @@
+src -> 
+    components ->
+        Nav.tsx
+    features ->
+        authSlice.ts
+        cartSlice.ts
+        reviewsSlice.ts
+        toursSlice.ts
+    hooks ->
+        useAuth.ts
+        useFetch.ts
+    pages ->
+        booking ->
+            page.tsx
+        shop ->
+            page.tsx
+    styles ->
+        booking.module.css
+        home.module.css
+        layout.module.css
+        shop.module.css
+    types ->
+        product.ts
+        tour.ts
+        user.ts
+    global.css
+    layout.tsx
+    page.tsx
+    store ->
+        providers.tsx
+        store.ts

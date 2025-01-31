@@ -9,7 +9,7 @@ export const Nav = () => {
   const pathname = usePathname();
 
   return (
-    <nav className='mydiv'>
+    <nav className={styles.nav}>
       <Link
         className={`${styles.link} ${pathname === "/" ? styles.active : ""}`}
         href="/"
