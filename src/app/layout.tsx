@@ -5,7 +5,7 @@ import "./globals.css";
 import type { ReactNode } from "react";
 import { Provider } from "react-redux";
 import store from "../store/store";
-import React from "react";
+import React, { Component } from "react";
 import { Nav } from "./components/Nav";
 
 import styles from "./styles/layout.module.css";

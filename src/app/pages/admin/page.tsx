@@ -9,12 +9,12 @@ export default function AdminPage() {
     
     useEffect(() => {
         if (!user || user.role !== "admin") {
-            router.push("/");  // Редиректим, если нет прав
+            router.push("/");  // Checkin user role
         }
-    }, [user, router]);  // useEffect будет реагировать только на изменения user и router
+    }, [user, router]);  // useEffect will be reactin only on the changing of user и router
 
     if (!user || user.role !== "admin") {
-        return null;  // Пока рендерим null, до того как редирект будет выполнен
+        return null;  // While we render null, before the redirect is executed
     }
 
     return (
